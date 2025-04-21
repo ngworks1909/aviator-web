@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react'
 import { Bot, CreditCard, Users2, Lock, Flag, LucideIcon } from 'lucide-react'
-import { Button } from "@/components/ui/button"
 import ludo from '@/assets/ludo.svg'
 import cricket from '@/assets/cricket.svg'
 import rummy from '@/assets/rummy.svg'
@@ -17,7 +16,7 @@ interface FeatureProps {
 }
 
 export default function Cards(): React.ReactElement {
-  const [activeIndex, setActiveIndex] = useState<number>(0)
+  const [_, setActiveIndex] = useState<number>(0)
 
   const games: Game[] = [
     { image: `${ludo}?height=300&width=300` },
@@ -32,29 +31,29 @@ export default function Cards(): React.ReactElement {
     return () => clearInterval(timer)
   }, [games.length])
 
-  const getCardStyle = (index: number): React.CSSProperties => {
-    const position = (index - activeIndex + games.length) % games.length
-    let transform = ''
-    let opacity = 1
-    let zIndex = 1
+  // const getCardStyle = (index: number): React.CSSProperties => {
+  //   const position = (index - activeIndex + games.length) % games.length
+  //   let transform = ''
+  //   let opacity = 1
+  //   let zIndex = 1
 
-    if (position === 0) {
-      transform = 'translateX(0) scale(1)'
-      zIndex = 3
-    } else if (position === 1) {
-      transform = 'translateX(110%) scale(0.9)'
-      opacity = 0.7
-      zIndex = 2
-    } else if (position === games.length - 1) {
-      transform = 'translateX(-110%) scale(0.9)'
-      opacity = 0.7
-      zIndex = 2
-    } else {
-      opacity = 0
-    }
+  //   if (position === 0) {
+  //     transform = 'translateX(0) scale(1)'
+  //     zIndex = 3
+  //   } else if (position === 1) {
+  //     transform = 'translateX(110%) scale(0.9)'
+  //     opacity = 0.7
+  //     zIndex = 2
+  //   } else if (position === games.length - 1) {
+  //     transform = 'translateX(-110%) scale(0.9)'
+  //     opacity = 0.7
+  //     zIndex = 2
+  //   } else {
+  //     opacity = 0
+  //   }
 
-    return { transform, opacity, zIndex }
-  }
+  //   return { transform, opacity, zIndex }
+  // }
 
   
   return (

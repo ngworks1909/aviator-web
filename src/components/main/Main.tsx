@@ -1,8 +1,8 @@
 import Cards from "../home/Cards";
-import Dice from "../home/Dice";
+// import Dice from "../home/Dice";
 import Faq from "../home/FAQ";
 import Footer from "../home/Footer";
-import Games from "../home/Games";
+// import Games from "../home/Games";
 import Home from "../home/Home";
 import Installation from "../home/Installation";
 import Reviews from "../home/Reviews";
