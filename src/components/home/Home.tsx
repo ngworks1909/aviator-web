@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import { FaAndroid, FaApple } from "react-icons/fa";
+import { FaAndroid } from "react-icons/fa";
 import mobile from '@/assets/mobile.png'
 
 
@@ -24,7 +24,7 @@ export default function Home() {
   
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center flex-col lg:flex-row">
+    <section id="home" className="min-h-screen hidden md:flex items-center justify-center flex-col lg:flex-row">
           <div className="flex-1 pt-10 lg:pt-10 text-center">
             <input type="image" src={mobile} alt="" />
           </div>
@@ -56,10 +56,10 @@ export default function Home() {
             </div> */}
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button onClick={handleDownload} className="bg-gradient-to-r from-blue-400 to-purple-600 text-white font-bold py-6 px-8 rounded-full transition-transform duration-300 ease-in-out hover:scale-105 hover:opacity-90">
+              {/* <Button onClick={handleDownload} className="bg-gradient-to-r from-blue-400 to-purple-600 text-white font-bold py-6 px-8 rounded-full transition-transform duration-300 ease-in-out hover:scale-105 hover:opacity-90">
                 <FaApple className="mr-2 h-5 w-5" />
                 DOWNLOAD
-              </Button>
+              </Button> */}
               <Button onClick={handleDownload} variant="outline" className="bg-gray-800 text-purple-600 font-bold py-6 px-8 rounded-full border-purple-600 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-purple-400 hover:text-white hover:border-purple-400">
                 <FaAndroid className="mr-2 h-5 w-5" />
                 DOWNLOAD

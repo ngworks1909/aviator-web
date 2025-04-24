@@ -37,7 +37,7 @@ export default function Navbar() {
     }
   }
   return (
-    <header className="px-4 py-4 flex items-center justify-between fixed top-0 left-0 right-0 bg-black z-20">
+    <header className="px-4 py-4 hidden md:flex items-center justify-between fixed top-0 left-0 right-0 bg-black z-20">
         <input type='image' src={logo} alt="Logo" className="text-blue-400 h-12 ml-2" />
         <nav className="hidden lg:flex items-center space-x-8 flex-grow justify-center">
           {navItems.map((item) => (

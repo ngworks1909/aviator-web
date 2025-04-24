@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { Bot, CreditCard, Users2, Lock, Flag, LucideIcon } from 'lucide-react'
+import { Bot, CreditCard, Users2, Lock, LucideIcon } from 'lucide-react'
 import ludo from '@/assets/ludo.svg'
 import cricket from '@/assets/cricket.svg'
 import rummy from '@/assets/rummy.svg'
@@ -57,7 +57,7 @@ export default function Cards(): React.ReactElement {
 
   
   return (
-    <div className='mt-12 pb-16'>
+    <div className='mt-12 pb-16 hidden md:flex flex-col'>
       {/* <div className="text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
           <span className="block text-2xl md:text-3xl font-medium mb-2 text-gray-400">CHOOSE YOUR</span>
@@ -112,12 +112,12 @@ export default function Cards(): React.ReactElement {
         </Button>
       </div> */}
 
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 mb-20">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
         <Feature icon={Bot} text="Bot Free" />
         <Feature icon={Lock} text="100% Secure" />
-        <Feature icon={CreditCard} text="Instant withdraw" />
+        <Feature icon={CreditCard} text="24 hour withdraw" />
         <Feature icon={Users2} text="24/7 Customer support" />
-        <Feature icon={Flag} text="Made in India" />
+        {/* <Feature icon={Flag} text="Made in India" /> */}
       </div>
 
       <div className="text-center">

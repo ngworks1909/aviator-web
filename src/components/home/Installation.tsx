@@ -41,12 +41,12 @@ export default function Installation() {
         {/* Header */}
         <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-8">
-          STEPS <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-cyan-500">TO INSTALL</span>
+          STEPS <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">TO INSTALL</span>
         </h2>
-          <p className="text-xl text-gray-400 mb-8">
+          <p className="text-xl text-gray-400 mb-8 hidden md:flex">
             Click here to download now
           </p>
-          <div className="flex justify-center flex-col sm:flex-row gap-4">
+          <div className=" hidden md:flex justify-center flex-col sm:flex-row gap-4">
             <Button 
               className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-6 rounded-full text-lg font-bold"
             >

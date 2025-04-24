@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { Plus, Minus, Star } from 'lucide-react'
-import { FaAndroid, FaApple } from "react-icons/fa";
+import { Plus, Minus } from 'lucide-react'
+import { FaAndroid } from "react-icons/fa";
 import { Button } from '../ui/button'
 
 export default function FAQ() {
@@ -35,13 +35,13 @@ export default function FAQ() {
     }
   ]
 
-  const ratings = [
-    { stars: 5, percentage: 75 },
-    { stars: 4, percentage: 15 },
-    { stars: 3, percentage: 5 },
-    { stars: 2, percentage: 3 },
-    { stars: 1, percentage: 2 }
-  ]
+  // const ratings = [
+  //   { stars: 5, percentage: 75 },
+  //   { stars: 4, percentage: 15 },
+  //   { stars: 3, percentage: 5 },
+  //   { stars: 2, percentage: 3 },
+  //   { stars: 1, percentage: 2 }
+  // ]
 
   const handleDownload = () => {
     // Directly set the file URL
@@ -110,7 +110,7 @@ export default function FAQ() {
         </div>
 
         {/* Stats Section */}
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        {/* <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
             <div className="text-6xl font-bold mb-2">10M +</div>
             <div className="text-2xl">DOWNLOADS</div>
@@ -147,7 +147,7 @@ export default function FAQ() {
             </div>
           </div>
           
-        </div>
+        </div> */}
         
       </div>
       <div 
@@ -162,10 +162,10 @@ export default function FAQ() {
             new rewards
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
-              <Button onClick={handleDownload} className="bg-gradient-to-r from-blue-400 to-purple-600 text-white font-bold py-6 px-8 rounded-full transition-transform duration-300 ease-in-out hover:scale-105 hover:opacity-90">
+              {/* <Button onClick={handleDownload} className="bg-gradient-to-r from-blue-400 to-purple-600 text-white font-bold py-6 px-8 rounded-full transition-transform duration-300 ease-in-out hover:scale-105 hover:opacity-90">
                 <FaApple className="mr-2 h-5 w-5" />
                 DOWNLOAD
-              </Button>
+              </Button> */}
               <Button onClick={handleDownload} variant="outline" className="bg-gray-800 text-purple-600 font-bold py-6 px-8 rounded-full border-purple-600 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-purple-400 hover:text-white hover:border-purple-400">
                 <FaAndroid className="mr-2 h-5 w-5" />
                 DOWNLOAD
