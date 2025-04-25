@@ -2,7 +2,7 @@ import { FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A051C] text-gray-300 py-12 px-4">
+    <footer className="bg-[#1c1705] text-gray-300 py-12 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Klik Games Column */}
@@ -37,10 +37,7 @@ export default function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h3 className="text-white font-bold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li>+012 3456789</li>
-              <li>example@gmail.com</li>
               <li className="flex space-x-4 pt-2">
                 <a href="#" className="hover:text-white transition-colors">
                   <FaYoutube className="w-5 h-5" />

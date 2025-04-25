@@ -1,6 +1,8 @@
 import logo from '@/assets/logo.png'
 import {Download, Star} from 'lucide-react'
 import { Button } from '../ui/button'
+import ImageCarousel from './Carousel'
+
 
 export default function MobileScreen() {
   return (
@@ -36,7 +38,9 @@ export default function MobileScreen() {
       </div>
       <Button className='mt-4 bg-orange-600 hover:bg-orange-600 text-md font-bold py-5'>Install</Button>
       </div>
-      <div className='h-64 w-full bg-red-400 mt-4'></div>
+      <div className='w-full mt-4 overflow-hidden'>
+        <ImageCarousel/>
+      </div>
       <div className='p-4 flex flex-col gap-3 mt-6'>
         <h1 className='text-lg font-bold'>About this app</h1>
         <span className='text-md'>Aviator game can be defined as a game in the crash genre that boasts gripping gameplay and is based on the Provably Fair mechanism. An aircraft taking off is the central mechanic. The speed increases with each second, beginning with an x1 multiplier. You must cash out INR before the airplane flies away, which occurs at random. Upon withdrawal, the total of your bet will be multiplied by the current coefficient. Your bet will be null and void if you can’t withdraw the entire stake before the aircraft disappears.</span>

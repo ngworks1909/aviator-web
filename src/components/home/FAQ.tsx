@@ -72,10 +72,10 @@ export default function FAQ() {
         </div>
 
         {/* FAQ Section */}
-        <div className="bg-[#1E1133] rounded-2xl p-6 mb-16">
-          <div className="flex justify-between items-center mb-6">
+        <div className="bg-[#332311] rounded-2xl p-6 mb-16">
+          <div className="flex justify-between items-center mb-6 flex-col gap-4 md:gap-0 md:flex-row">
             <h2 className="text-xl font-semibold">FAQ Accordion V3</h2>
-            <button className="bg-white text-purple-900 px-4 py-2 rounded-full text-sm font-medium">
+            <button className="bg-white text-orange-900 px-4 py-2 rounded-full text-sm font-medium">
               Preview results
             </button>
           </div>
@@ -84,7 +84,7 @@ export default function FAQ() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-[#2D1543] rounded-xl overflow-hidden"
+                className="bg-[#5b3e1c] rounded-xl overflow-hidden"
               >
                 <button
                   className="w-full px-6 py-4 flex justify-between items-center"
@@ -151,10 +151,7 @@ export default function FAQ() {
         
       </div>
       <div 
-          className="mt-20 bg-gradient-to-r from-[#8A2BE2] via-[#9400D3] to-[#8A2BE2] rounded-2xl p-12 text-center"
-          style={{
-            backgroundImage: 'linear-gradient(to right, rgb(138, 43, 226), rgb(148, 0, 211), rgb(138, 43, 226))'
-          }}
+          className="mt-20 bg-gradient-to-r from-[#c0ad3e] via-[#d38200] to-[#c0ad3e] rounded-2xl p-12 text-center"
         >
           <h2 className="text-2xl font-bold text-white mb-6">
             Get ready to earn
@@ -166,7 +163,7 @@ export default function FAQ() {
                 <FaApple className="mr-2 h-5 w-5" />
                 DOWNLOAD
               </Button> */}
-              <Button onClick={handleDownload} variant="outline" className="bg-gray-800 text-purple-600 font-bold py-6 px-8 rounded-full border-purple-600 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-purple-400 hover:text-white hover:border-purple-400">
+              <Button onClick={handleDownload} variant="outline" className="bg-gray-800 text-orange-600 font-bold py-6 px-8 rounded-full border-orange-600 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-orange-400 hover:text-white hover:border-orange-400">
                 <FaAndroid className="mr-2 h-5 w-5" />
                 DOWNLOAD
               </Button>
