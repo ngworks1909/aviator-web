@@ -59,7 +59,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-900/40 via-black to-orange-900/40 text-white py-16 px-4">
+    <section id = "faq" className="min-h-screen bg-gradient-to-br from-orange-900/40 via-black to-orange-900/40 text-white py-16 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -170,6 +170,6 @@ export default function FAQ() {
             </div>
         </div>
       
-    </div>
+    </section>
   )
 }

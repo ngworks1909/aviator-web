@@ -24,7 +24,7 @@ export default function Home() {
   
 
   return (
-    <section id="home" className="min-h-screen hidden md:flex items-center justify-center flex-col lg:flex-row">
+    <section id="/" className="min-h-screen hidden md:flex items-center justify-center flex-col lg:flex-row">
           <div className="flex-1 pt-10 lg:pt-10 text-center">
             <input type="image" src={mobile} alt="" />
           </div>

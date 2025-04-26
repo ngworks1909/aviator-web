@@ -17,10 +17,8 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold mb-4">About</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Product</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Resource</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Term & Condition</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
+              <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -28,10 +26,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold mb-4">Company</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Our Team</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Partner With Us</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Privacy & Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
             </ul>
           </div>
 
