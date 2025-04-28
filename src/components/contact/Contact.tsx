@@ -34,6 +34,7 @@ export default function Contact() {
   useEffect(() => {
     setTimeout(() => {
         setFormStatus(null)
+        setIsSubmitting(false)
     }, 5000)
   }, [formStatus])
 

@@ -20,6 +20,7 @@ export default function Navbar() {
     { href: "/terms", label: "Terms & Conditions" },
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/contact", label: "Contact" },
+    { href: "/feedback", label: "Feedback"},
   ];
 
   const navigate = useNavigate();

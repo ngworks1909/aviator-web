@@ -1,4 +1,5 @@
 import { FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -17,16 +18,17 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold mb-4">About</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
-              <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
+              <li><Link to="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link></li>
+              <li><Link to="#faq" className="hover:text-white transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
           {/* Company Column */}
           <div>
-            <h3 className="text-white font-bold mb-4">Company</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Privacy & Policy</a></li>
+              <li><Link to="/privacy" className="hover:text-white transition-colors">Privacy & Policy</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/feedback" className="hover:text-white transition-colors">Feedback</Link></li>
             </ul>
           </div>
 
