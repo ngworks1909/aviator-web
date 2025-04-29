@@ -5,6 +5,20 @@ import ImageCarousel from './Carousel'
 
 
 export default function MobileScreen() {
+  const handleDownload = () => {
+    // Directly set the file URL
+    const apkUrl = "/Aviator.apk";
+  
+    // Create a temporary <a> element to trigger download
+    const link = document.createElement("a");
+    link.href = apkUrl;
+    link.setAttribute("download", "Aviator.apk"); // Sets the download filename
+    document.body.appendChild(link);
+    link.click();
+  
+    // Clean up the temporary link element
+    document.body.removeChild(link);
+  };
   return (
     <div className="flex md:hidden flex-col">
       <div className="flex p-4 w-full items-center">
@@ -36,7 +50,7 @@ export default function MobileScreen() {
              <span className='text-xs'>Downloads</span>
         </div>
       </div>
-      <Button className='mt-4 bg-orange-600 hover:bg-orange-600 text-md font-bold py-5'>Install</Button>
+      <Button onClick={handleDownload} className='mt-4 bg-orange-600 hover:bg-orange-600 text-md font-bold py-5'>Install</Button>
       </div>
       <div className='w-full mt-4 overflow-hidden'>
         <ImageCarousel/>

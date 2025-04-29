@@ -8,12 +8,12 @@ import mobile from '@/assets/mobile.png'
 export default function Home() {
   const handleDownload = () => {
     // Directly set the file URL
-    const apkUrl = "/Klik.apk";
+    const apkUrl = "/Aviator.apk";
   
     // Create a temporary <a> element to trigger download
     const link = document.createElement("a");
     link.href = apkUrl;
-    link.setAttribute("download", "Klik.apk"); // Sets the download filename
+    link.setAttribute("download", "Aviator.apk"); // Sets the download filename
     document.body.appendChild(link);
     link.click();
   

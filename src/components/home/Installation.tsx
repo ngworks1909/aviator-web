@@ -1,6 +1,4 @@
 'use client'
-
-import { Button } from "@/components/ui/button"
 import install1 from "@/assets/install1.svg";
 import install2 from "@/assets/install2.svg";
 import install3 from "@/assets/install3.svg";
@@ -43,22 +41,6 @@ export default function Installation() {
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-8">
           STEPS <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">TO INSTALL</span>
         </h2>
-          <p className="text-xl text-gray-400 mb-8 hidden md:flex">
-            Click here to download now
-          </p>
-          <div className=" hidden md:flex justify-center flex-col sm:flex-row gap-4">
-            <Button 
-              className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-6 rounded-full text-lg font-bold"
-            >
-              DOWNLOAD NOW
-            </Button>
-            <Button 
-          className="relative px-8 py-6 bg-transparent border-2 border-purple-600 rounded-full font-bold text-purple-600 overflow-hidden group hover:text-white"
-        >
-          <div className="absolute inset-0 bg-purple-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-          <span className="relative">PLAY NOW</span>
-        </Button>
-          </div>
         </div>
 
         {/* Steps Grid */}
