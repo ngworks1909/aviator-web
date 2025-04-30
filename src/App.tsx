@@ -5,10 +5,26 @@ import Policy from './components/policy/Policy';
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom';
 import ContactPage from './components/contact/ContactPage';
 import FeedbackPage from './components/feedback/FeedBackPage';
+import { useEffect } from 'react';
+import FingerprintJS from '@fingerprintjs/fingerprintjs';
 
 
 
 function App() {
+  useEffect(() => {
+    FingerprintJS.load().then(fp => {
+      fp.get().then(result => {
+        const visitorId = result.visitorId;
+        fetch('http://localhost:3001/api/visitor/create', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ visitorId }),
+        })
+      });
+    });
+  }, []);
   return (
     <>
     <Router>
