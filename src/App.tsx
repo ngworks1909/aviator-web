@@ -15,7 +15,7 @@ function App() {
     FingerprintJS.load().then(fp => {
       fp.get().then(result => {
         const visitorId = result.visitorId;
-        fetch('http://localhost:3001/api/visitor/create', {
+        fetch('https://backend-avi.fivlog.space/api/visitor/create', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
